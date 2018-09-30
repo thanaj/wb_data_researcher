@@ -11,7 +11,7 @@ function createObjectStore(event,storeName,configObj) {
 function createTransaction(db,storeName){
   let transaction = db.transaction([storeName], "readwrite");
   transaction.oncomplete = function(event) {
-    console.log('oncomplete transction', event);
+    //console.log('oncomplete transction', event);
   };
   transaction.onerror = function(event) {
     console.log('onerror transction', event)
@@ -30,7 +30,7 @@ function addRecord(event,dataToBeAdd,promiseFn ){
   let objectStore1 = transaction.objectStore(variables.IND_DB_STORE_NAME);
   let addRequest = objectStore1.add(dataToBeAdd);
   addRequest.oncomplete = function(event) {
-    console.log('addRequest complete', event)
+    //console.log('addRequest complete', event)
     promiseFn.resolve(event)
   };
   addRequest.onerror = function(event) {
@@ -38,33 +38,15 @@ function addRecord(event,dataToBeAdd,promiseFn ){
     console.log('addRequest onerror',event.target.error)
     promiseFn.reject(event)
   };
-  /*
-  query.onerror = function(event) {
-    console.log('query error',event)
-    promiseFn.reject(event)
-    //return result;
-  };
-  query.onsuccess = function(event) {
-    console.log('query sukces',event)
-    result = event.target.result
-    promiseFn.resolve(result)
-    //return result;
-  };
-  */
 }
 
 
-
-
-
 function requestOpenDb(promiseFn){
-  console.log(promiseFn)
   let indexedDb = window.indexedDB;
   let request;
   if(indexedDb){
     let request = indexedDb.open(variables.IND_DB_STORE_NAME);
     request.onupgradeneeded = function(event) {
-      console.log('request onupgradeneeded', event);
       createObjectStore(event,storeName,configObj)
     }
 
@@ -90,7 +72,7 @@ function addData(dataToBeAdd) {
 
     let request = requestOpenDb(promiseObj)
     request.onsuccess = function(event) {
-      console.log('request onsuccess', event)
+      //console.log('request onsuccess', event)
       return addRecord(event,dataToBeAdd, promiseObj)
     };
 

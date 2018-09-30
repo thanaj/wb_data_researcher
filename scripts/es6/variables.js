@@ -200,7 +200,136 @@ obj.INDICATORS = [{
 {
   "id":"SH.FPL.FSEX.Q1.ZS","name":"Median age at first sexual intercourse (women ages 25-49): Q1 (lowest)",
   "sourceNote":"Median age at first sexual intercourse: Median age at first sexual intercourse among women aged 25-49 years."
+},
+{
+
+  "id":"MO.INDEX.SRLW.XQ","name":"Safety and Rule of Law",
+  "sourceNote":"Personal Safety:  Within this sub-category the Ibrahim Index measures: (i) Safety of the Person – level of criminality in a country. (ii) Violent Crime – prevalence of violent crime, both organised and common. (iii) Social Unrest – prevalence of violent social unrest. (iv) Human Trafficking – government efforts to combat human trafficking. (v) Domestic Political Persecution – clustered indicator (an average) of the following variables: Physical Integrity Rights Index – government respect for citizens’ rights to freedom from torture, extrajudicial killing, political imprisonment, and disappearance.  Political Terror Scale – levels of state-instigated political violence and terror."
+},
+{
+"id":"SG.VAW.1549.ZS","name":"Proportion of women subjected to physical and\/or sexual violence in the last 12 months (% of women age 15-49)",
+"sourceNote":"Proportion of women subjected to physical and\/or sexual violence in the last 12 months is the percentage of ever partnered women age 15-49 who are subjected to physical violence, sexual violence or both by a current or former intimate partner in the last 12 months."
+
+},
+{
+  "id":"SG.OWN.HSAL.MA.ZS","name":"Men who own house alone (% of men)",
+  "sourceNote":"Men who own house alone (% of men) is the percentage of men who only solely own a house which is legally registered with their name or cannot be sold without their signature."
+},
+{
+  "id":"SG.OWN.HSAL.FE.ZS","name":"Women who own house alone (% of women age 15-49)",
+  "sourceNote":"Women who own house alone (% of women age 15-49) is the percentage of women age 15-49 who only own a house, which legally registered with their name or cannot be sold without their signature, alone (don't share ownership with anyone)."
+},
+{
+  "id":"IC.FRM.THEV.ZS","name":"Firms experiencing losses due to theft and vandalism (% of firms)",
+  "sourceNote":"Percent of firms experiencing losses due to theft, robbery, vandalism or arson that occurred on the establishment's premises."
+},
+{
+  "id":"SG.LEG.MRRP","name":"Legislation explicitly criminalizes marital rape (1=yes; 0=no)",
+"sourceNote":'Legislation explicitly criminalizes marital rape is whether there is legislation that explicitly criminalizes the act of marital rape by providing that rape or sexual assault provisions apply "irrespective of the nature of the relationship" between the perpetrator and complainant or by stating that "no marriage or other relationship shall constitute a defense to a charge of rape or sexual assault under the legislation" '
+},
+{
+  "id":"IT.NET.USER.ZS","name":"Individuals using the Internet (% of population)",
+  "sourceNote":"Internet users are individuals who have used the Internet (from any location) in the last 3 months. The Internet can be used via a computer, mobile phone, personal digital assistant, games machine, digital TV etc."
+},
+{
+  "id":"IT.NET.USER.P2","name":"Internet users (per 100 people)",
+  "sourceNote":"Internet users are individuals who have used the Internet (from any location) in the last 3 months. The Internet can be used via a computer, mobile phone, personal digital assistant, games machine, digital TV etc."
+},
+{
+  "id":"VC.HOM.ITEN.P5.LE","name":"Intentional homicide rate (per 100,000 people, WHO)",
+  "sourceNote":""
+},{
+  "id":"VC.BTL.DETH","name":"Battle-related deaths (number of people)",
+  "sourceNote":"Battle-related deaths are deaths in battle-related conflicts between warring parties in the conflict dyad (two conflict units that are parties to a conflict). Typically, battle-related deaths occur in warfare involving the armed forces of the warring parties. This includes traditional battlefield fighting, guerrilla activities, and all kinds of bombardments of military units, cities, and villages, etc. The targets are usually the military itself and its installations or state institutions and state representatives, but there is often substantial collateral damage in the form of civilians being killed in crossfire, in indiscriminate bombings, etc. All deaths--military as well as civilian--incurred in such situations, are counted as battle-related deaths."
+},
+{
+"id":"VA.STD.ERR","name":"Voice and Accountability: Standard Error",
+"sourceNote":"Voice and Accountability captures perceptions of the extent to which a country's citizens are able to participate in selecting their government, as well as freedom of expression, freedom of association, and a free media."
+},
+{
+  "id":"5.51.01.07.gender","name":"Gender equality",
+  "sourceNote":"The indicator is defined as the ratio of the gross enrollment rate of girls to boys in primary and secondary education levels in both public and private schools. Women have an enormous impact on the well-being of their families and societies, but their potential is sometimes not realized because of discriminatory social norms, incentives, and legal institutions. Although their status has improved in recent decades, gender inequalities persist. Education is one of the most important aspects of human development, and eliminating gender disparity at all levels of education would help to increase the status and capabilities of women. This indicator provides a measure of equality of educational opportunity and relates to the third MDG that seeks to promote gender equality and the empowerment of women."
+},
+{
+  "id":"VC.IHR.NPOL.P5","name":"Intentional homicides, government police sources (per 100,000 people)",
+  "sourceNote":""
+},
+{
+  "id":"NE.CON.PRVT.ZS","name":"Households and NPISHs final consumption expenditure (% of GDP)",
+  "sourceNote":"Household final consumption expenditure (formerly private consumption) is the market value of all goods and services, including durable products (such as cars, washing machines, and home computers), purchased by households. It excludes purchases of dwellings but includes imputed rent for owner-occupied dwellings. It also includes payments and fees to governments to obtain permits and licenses. Here, household consumption expenditure includes the expenditures of nonprofit institutions serving households, even when reported separately by the country. This item also includes any statistical discrepancy in the use of resources relative to the supply of resources.","sourceOrganization":"World Bank national accounts data, and OECD National Accounts data files."
+},
+{
+  "id":"IS.VEH.PCAR.P3","name":"Passenger cars (per 1,000 people)",
+  "sourceNote":"Passenger cars refer to road motor vehicles, other than two-wheelers, intended for the carriage of passengers and designed to seat no more than nine people (including the driver)."
+},
+{
+  "id":"SH.STA.ACSN.UR","name":"Improved sanitation facilities, urban (% of urban population with access)",
+  "sourceNote":"Access to improved sanitation facilities, urban, refers to the percentage of the urban population using improved sanitation facilities. Improved sanitation facilities are likely to ensure hygienic separation of human excreta from human contact. They include flush\/pour flush (to piped sewer system, septic tank, pit latrine), ventilated improved pit (VIP) latrine, pit latrine with slab, and composting toilet."
+},
+{
+  "id":"IC.FRM.OBS.OBST4","name":"Percent of firms choosing corruption as their biggest obstacle",
+  "sourceNote":"Percent of firms that chose corruption as the biggest obstacle faced by this establishment.  (Survey respondents were presented with a list of 15 potential obstacles.)   Source:World Bank, Enterprise Surveys Project(http:\/\/www.enterprisesurveys.org\/CustomQuery)."
+},
+{
+  "id":"GV.TI.SCOR.IDX","name":"Corruption Perceptions Index (score)",
+  "sourceNote":"This information is from the http:\/\/www.transparency.org Transparency International web site.  More information may be available there.  CPI Score relates to perceptions of the degree of corruption as seen by business people and country analysts, and ranges between 0 (highly corrupt) and 10 (highly clean).  Data for 2012 Corruption Perceptions Index scores countries on a scale from 0 (highly corrupt) to 100 (very clean).  Confidence range provides a range of possible values of the CPI score. This reflects how a country's score may vary, depending on measurement precision. Nominally, with 5 percent probability the score is above this range and with another 5 percent it is below."
+},
+{
+  "id":"IC.FRM.CORR.GRAFT2","name":"Bribery index (% of gift or informal payment requests during public transactions)",
+  "sourceNote":"Bribery index is the percentage of gift or informal payment requests during 6 infrastructure, permits and licences, and tax transactions.   Source:World Bank, Enterprise Surveys Project(http:\/\/www.enterprisesurveys.org\/Data\/ExploreTopics\/corruption)."
+},
+{
+  "id":"HOU.ELC.ACSN.ZS","name":"Household Access to Electricity: Total (in % of total household)",
+"sourceNote":""
+},
+{
+  "id":"FX.OWN.TOTL.ZS","name":"Account ownership at a financial institution or with a mobile-money-service provider (% of population ages 15+)",
+  "sourceNote":"Account denotes the percentage of respondents who report having an account (by themselves or together with someone else) at a bank or another type of financial institution or report personally using a mobile money service in the past 12 months (% age 15+)."
+},
+{
+  "id":"SH.STA.ACCH.ZS","name":"Health care (% of population with access)",
+  "sourceNote":""
+},
+{
+  "id":"SH.STA.BASS.ZS","name":"People using at least basic sanitation services (% of population)",
+  "sourceNote":"The percentage of people using at least basic sanitation services, that is, improved sanitation facilities that are not shared with other households.  This indicator encompasses both people using basic sanitation services as well as those using safely managed sanitation services.   Improved sanitation facilities include flush\/pour flush to piped sewer systems, septic tanks or pit latrines; ventilated improved pit latrines, compositing toilets or pit latrines with slabs."
+},
+{
+"id":"SI.POV.25DAY","name":"Poverty headcount ratio at $2.5 a day (PPP) (% of population)",
+"sourceNote":"Population below $2.5 a day is the percentage of the population living on less than $2.5 a day at 2005 international prices. "
+},
+{
+  "id":"SI.POV.NAPR.ZS","name":"Poverty Rate (in % of population)","sourceNote":""
+},
+{
+  "id":"SI.POV.NAHC","name":"Poverty headcount ratio at national poverty lines (% of population)",
+  "sourceNote":"National poverty headcount ratio is the percentage of the population living below the national poverty lines. National estimates are based on population-weighted subgroup estimates from household surveys."
+},
+{
+  "id":"SH.ADM.INPT","name":"Inpatient admission rate (% of population )","sourceNote":""
+},
+{
+  "id":"SH.DYN.AIDS.ZS","name":"Prevalence of HIV, total (% of population ages 15-49)",
+  "sourceNote":"Prevalence of HIV refers to the percentage of people ages 15-49 who are infected with HIV."
+},
+{
+  "id":"SM.POP.TOTL.ZS","name":"International migrant stock (% of population)",
+  "sourceNote":`International migrant stock is the number of people born in a country other than that in which they live. It also includes refugees. The data used to estimate the international migrant stock at a particular time are obtained mainly from population censuses. The estimates are derived from the data on foreign-born population--people who have residence in one country but were born in another country. When data on the foreign-born population are not available, data on foreign population--that is, people who are citizens of a country other than the country in which they reside--are used as estimates. After the breakup of the Soviet Union in 1991 people living in one of the newly independent countries who were born in another were classified as international migrants. Estimates of migrant stock in the newly independent states from 1990 on are based on the 1989 census of the Soviet Union. For countries with information on the international migrant stock for at least two points in time, interpolation or extrapolation was used to estimate the international migrant stock on July 1 of the reference years. For countries with only one observation, estimates for the reference years were derived using rates of change in the migrant stock in the years preceding or following the single observation available. A model was used to estimate migrants for countries that had no data.`
+},
+{
+  "id":"SN.ITK.DEFC.ZS","name":"Prevalence of undernourishment (% of population)",
+  "sourceNote":"Population below minimum level of dietary energy consumption (also referred to as prevalence of undernourishment) shows the percentage of the population whose food intake is insufficient to meet dietary energy requirements continuously. Data showing as 5 may signify a prevalence of undernourishment below 5%.","sourceOrganization":"Food and Agriculture Organization (http:\/\/www.fao.org\/publications\/en\/)."
+},
+{
+  "id":"SH.STA.ODFC.ZS","name":"People practicing open defecation (% of population)",
+"sourceNote":"People practicing open defecation refers to the percentage of the population defecating in the open, such as in fields, forest, bushes, open bodies of water, on beaches, in other open spaces or disposed of with solid waste."
 }
+
+
+
+
+
+
 ]
 
 

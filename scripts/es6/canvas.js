@@ -1,9 +1,6 @@
 import {  default as variables } from './variables.js';
 
 variables.VISUALIZATION_SELECTOR
-
-
-
 let canvas = document.querySelector(variables.VISUALIZATION_SELECTOR)
 
 function visualizeData(data) {
