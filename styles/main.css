@@ -1,3 +1,5 @@
+
+
 table {
   border:1px solid black;
   border-collapse: collapse;
@@ -6,4 +8,24 @@ td {
   padding: 0 15px;
   text-align: right;
   border: 1px solid grey;
+}
+
+canvas {
+  background: antiquewhite;
+  width:400px;
+  height:200px;
+
+}
+.canvas-container{
+  display: flex;
+  flex-flow: row nowrap;
+}
+.canvas-scale-container{
+  display: flex;
+  flex-flow: column nowrap;
+  flex-direction: column-reverse;
+  justify-content: flex-start;
+}
+p::after{
+  content:""
 }

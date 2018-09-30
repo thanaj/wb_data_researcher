@@ -1,5 +1,5 @@
 export default function get(url){
-  console.log('poszlo')
+  console.log('poszlo' + ': ' + url)
   return new Promise(function(resolve, reject){
     let xhttp = new XMLHttpRequest();
     xhttp.open("GET",url,true);
