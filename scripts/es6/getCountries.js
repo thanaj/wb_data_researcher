@@ -2,12 +2,8 @@ import { default as get} from './helper.js';
 import {
   default as variables
 } from './variables.js';
-import {
-  default as buildTable
-} from './buildTable.js';
-import {
-  default as canvas
-} from './canvas.js';
+
+
 import {
   default as readDataDB
 } from './readData.js';
