@@ -1,0 +1,1 @@
+Project 'wb_data_researcher' is a website that allow to search through some indicators from World Bank for several countries. Data is fetched with promises, stored in IndexedDB and presented on chart. Project is non-commercial, it's purpose is to train programming skills.  

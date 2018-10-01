@@ -13,13 +13,14 @@ function createObjectStore(event,storeName,configObj) {
   let objectStore = db.createObjectStore(storeName, configObj);
 }
 
-function createTransaction(db,storeName){
+function createTransaction(db,storeName,promiseFn){
   let transaction = db.transaction([storeName], );
   transaction.oncomplete = function(event) {
-    //console.log('oncomplete transction', event);
+
   };
   transaction.onerror = function(event) {
     console.log('onerror transction', event)
+    promiseFn.reject(event)
   };
   return transaction;
 
@@ -27,7 +28,7 @@ function createTransaction(db,storeName){
 
 function readRecord(event,lookedValue,promiseFn ){
   let db = event.target.result;
-  let transaction = createTransaction(db,storeName);
+  let transaction = createTransaction(db,storeName,promiseFn);
   let objectStore = transaction.objectStore(storeName);
   let query = objectStore.get(lookedValue)
   let result;
@@ -35,23 +36,18 @@ function readRecord(event,lookedValue,promiseFn ){
   query.onerror = function(event) {
     console.log('query error',event)
     promiseFn.reject(event)
-    //return result;
   };
   query.onsuccess = function(event) {
-    //console.log('query sukces',event)
     result = event.target.result
     promiseFn.resolve(result)
-    //return result;
   };
 }
 function requestOpenDb(promiseFn){
-  //console.log(promiseFn)
   let indexedDb = window.indexedDB;
   let request;
   if(indexedDb){
     let request = indexedDb.open(storeName);
     request.onupgradeneeded = function(event) {
-      //console.log('request onupgradeneeded', event);
       createObjectStore(event,storeName,configObj)
     }
 
@@ -75,7 +71,6 @@ function readData(lookedValue) {
     let promiseObj = {resolve,reject};
     let request = requestOpenDb(promiseObj)
     request.onsuccess = function(event) {
-      //console.log('request onsuccess', event)
       return readRecord(event,lookedValue, promiseObj)
     };
   })
@@ -83,18 +78,8 @@ function readData(lookedValue) {
 
 
 
-function createData(key,value) {
-  let indexedDb = window.indexedDB
-  if (!indexedDb) {
-    return;
-  }
-}
-
-
-
 obj = {
-  readData,
-  createData
+  readData
 }
 
 export default obj;

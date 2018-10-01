@@ -30,7 +30,6 @@ function prepareDataForChart(dataForChart){
   return preparedData
 }
 function drawChartForGCharts(dataforChart,country){
-  console.log(dataforChart)
   google.charts.load('current', {'packages':['corechart']});
   google.charts.setOnLoadCallback(drawChart(dataforChart,country));
 }
