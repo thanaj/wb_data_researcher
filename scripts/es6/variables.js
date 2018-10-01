@@ -18,6 +18,7 @@ obj.COUNTRY_LIST_LINK = 'https://api.worldbank.org/v2/countries?format=JSON&per_
 obj.INDICATORS_LINK = 'http://api.worldbank.org/v2/indicators?format=json';
 obj.GET_DATA_BTN = '[data-target="get-data-button"]';
 
+obj.INFO_BOX_SELECTOR ='[data-target="info-box"]'
 obj.DESCRIPTION_SELECTOR = '[data-target="description-container"]';
 
 obj.VISUALIZATION_SELECTOR ='[data-target="visualisation-container"]';

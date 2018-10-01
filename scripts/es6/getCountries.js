@@ -28,6 +28,7 @@ let select = document.createElement('SELECT');
 let selectIndicator = document.createElement('SELECT');
 let getDataBtn = document.querySelector(variables.GET_DATA_BTN);
 let descriptionField = document.querySelector(variables.DESCRIPTION_SELECTOR);
+let infoBox = document.querySelector(variables.INFO_BOX_SELECTOR);
 
 getDataBtn.addEventListener('click', getData)
 selectIndicator.addEventListener('change', getIndicatorDescription);
@@ -41,19 +42,21 @@ function getData() {
   let url = `http://api.worldbank.org/v2/countries/${select.value}/indicators/${selectIndicator.value}?format=json`
   let queryName = `${select.value}_${selectIndicator.value}`
   let country = select.options[select.selectedIndex].getAttribute('data-target-country')
-  
+  infoBox.innerHTML =''
   let promis = readDataDB.readData(queryName);
   promis.then((data) => {
       if(!data){
         let promise = get(url);
         promise.then(function(data) {
-          //console.log(data)
+
           data = JSON.parse(data);
+          minifyData(data)
           drawChart.drawChartForGCharts(data,country)
           let dataToSave = {query:queryName,data:data}
           addDataDB.addData(dataToSave)
 
         }).catch(function(error) {
+          infoBox.innerHTML = "Error with getting data from wb api"
           console.log('Error with getting data from wb api',error);
         })
       }else{
@@ -63,15 +66,21 @@ function getData() {
     .catch((error) => {
       console.log('error reading data', error)
     });
-
-
-
-
-
 }
 
-function getDataFromWeb(){
 
+function minifyData(data){
+  let newData = [];
+  //data.splice[0,1
+  data[1].forEach((item)=>{
+    let newItem = {
+      date:item.date,
+      value:item.value
+    }
+    newData.push(newItem)
+  })
+  data[1]=newData
+  return newData;
 }
 
 function getCountries(countries) {
